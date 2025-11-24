@@ -34,7 +34,7 @@ public class LevelGenerator : MonoBehaviour
 
         GameObject circle = Instantiate(circlePrefab, spawnPos, Quaternion.identity);
         GameObject enemy = Instantiate(enemyPrefab, spawnPos - new Vector2(spawnPos.x, -2f), Quaternion.identity);
-        float randomScaleValue = Random.Range(0.1f, 1f);
+        float randomScaleValue = Random.Range(0.3f, 1f);
         circle.transform.localScale = new Vector3(randomScaleValue, randomScaleValue, randomScaleValue);
 
         lastSpawnPosition = spawnPos;

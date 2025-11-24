@@ -79,6 +79,11 @@ public class Ball : MonoBehaviour
         StartCoroutine(InteractionCooldown());
     }
 
+    private void Update()
+    {
+        startPoint = transform.position;
+    }
+
     IEnumerator InteractionCooldown()
     {
         canInteract = false; // Yakalanmayı kapat
