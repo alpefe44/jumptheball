@@ -27,5 +27,6 @@ public class InteractManager : MonoBehaviour
                 Debug.Log("Aynı yere vurdun yani oyun bitti");
             }
         }
+
     }
 }

@@ -250,7 +250,7 @@ Transform:
   m_GameObject: {fileID: 280959398}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.09, z: 0}
+  m_LocalPosition: {x: 0, y: -4.42, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -516,7 +516,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.6572624, g: 0.6600824, b: 0.6603774, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -732,6 +732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelGenerator
   circlePrefab: {fileID: 1400078826356418323, guid: b92bec0defae10f44a884d0ad831dafc, type: 3}
+  enemyPrefab: {fileID: 5126748146751234566, guid: a25c6099e1707c147aa17c07f1a85af0, type: 3}
   player: {fileID: 280959402}
   spawnDistance: 5
   xRange: 2

@@ -3,6 +3,7 @@ using UnityEngine;
 public class LevelGenerator : MonoBehaviour
 {
     public GameObject circlePrefab;
+    public GameObject enemyPrefab;
     public Transform player;
 
     public float spawnDistance = 3f;
@@ -31,8 +32,12 @@ public class LevelGenerator : MonoBehaviour
     {
         Vector2 spawnPos = new Vector2(Random.Range(-xRange, xRange), lastSpawnPosition.y + spawnDistance);
 
-        Instantiate(circlePrefab, spawnPos, Quaternion.identity);
+        GameObject circle = Instantiate(circlePrefab, spawnPos, Quaternion.identity);
+        GameObject enemy = Instantiate(enemyPrefab, spawnPos - new Vector2(spawnPos.x, -2f), Quaternion.identity);
+        float randomScaleValue = Random.Range(0.1f, 1f);
+        circle.transform.localScale = new Vector3(randomScaleValue, randomScaleValue, randomScaleValue);
 
         lastSpawnPosition = spawnPos;
     }
+
 }

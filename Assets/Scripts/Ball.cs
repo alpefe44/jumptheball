@@ -65,6 +65,7 @@ public class Ball : MonoBehaviour
     void OnMouseUp()
     {
         rb.isKinematic = false; // Fiziği tekrar aç
+        transform.SetParent(null);
 
         // Gücü uygula (ForceMode2D.Impulse anlık patlama gücü verir)
         DisableInteractionBriefly();
